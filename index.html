@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+      <title>JS BACKGROUND COLOR PROJECT</title>
+  </head>
+ <body>
+    <div class="Wrapper">
+     <div class="Container" id="main">
+        <button type="button" onClick="change()">Click Me!</button>
+   </div>
+</div>
+ 
+
+ <script>
+    var button = document.querySelector('button')
+    var body = document.querySelector('body')
+    var colors = ['red', 'green', 'blue', 'black', 'pink', 'purple']
+     body.style.backgroundColor = 'violet'
+     function change() {
+       var colorIndex = colors[Math.floor(Math.random()*colors.length)]
+        body.style.backgroundColor = colorIndex
+   }
+
+  </script>
+   </body>
+</html>
